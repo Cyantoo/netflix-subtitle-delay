@@ -43,6 +43,7 @@ function startObservation() {
         delayedSubtitleElm.classList.remove(cls)
       }
       delayedSubtitleElm.classList.add("delayed")
+      delayedSubtitleElm.style.left = "25%"
       subtitleElm.parentNode.insertBefore(delayedSubtitleElm, subtitleElm)
       orgElmObserver.observe(subtitleElm, {attributes: true, childList: true, subtree: true});
 
